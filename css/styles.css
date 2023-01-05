@@ -69,7 +69,7 @@ ul {
   margin-left: 40px;
 }
 .header-link {
-  display: flex;
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
@@ -82,7 +82,15 @@ ul {
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--primary-text-color);
+  color: var(--accent-color);
+}
+.hover-line::after{
+  display: block;
+  content: "";
+  height: 4px;
+  border-radius: 2px;
+  background: #404BBF;
+ 
 }
 .header-contacts {
   display: flex;
